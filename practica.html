@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="file.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Curso Básico JavaScript</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <h1 class="h1">Hola Mundo</h1>
+      <nav>
+        <ul class="nav">
+          <li><a onclick="setPostNumber('1')">Menu item 1</a></li>
+          <li><a onclick="setPostNumber('2')">Menu item 2</a></li>
+          <li><a onclick="setPostNumber('3')">Menu item 3</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <section class="section">
+        <div class="posts-wrapper">
+          <div class="posts">
+            <h2 class="h2">Mi Noticia <span id="postNumber"></span></h2>
+            
+            <p class="single-post">Minions <strong>ipsum</strong> hana dul sae hana dul sae hana dul sae la bodaaa underweaaar. Tatata bala tu la bodaaa pepete para tú bappleees jeje gelatooo tank yuuu! Underweaaar belloo! Hahaha jeje jeje daa tulaliloo aaaaaah butt. Bee do bee do bee do bappleees tank yuuu! Hahaha hana dul sae. Poopayee daa daa chasy butt wiiiii bananaaaa wiiiii jeje para tú. Bee do bee do bee do belloo! Ti aamoo! Chasy ti aamoo! Tatata bala tu la bodaaa chasy me want bananaaa! Hahaha me want bananaaa! Bee do bee do bee do.</p>
+            
+            <p class="single-post">Tank yuuu! poulet tikka masala chasy aaaaaah. Tulaliloo ti aamoo! Gelatooo belloo! Potatoooo chasy jiji underweaaar tatata bala tu tatata bala tu. Bee do bee do bee do hana dul sae tulaliloo poulet tikka masala ti aamoo! Poopayee belloo! Tank yuuu! Baboiii jeje. Gelatooo pepete bananaaaa hana dul sae. Tank yuuu! poulet tikka masala chasy aaaaaah.</p>
+          </div>
+          
+          <aside class="advertisement">
+            <img src="images/publicity.jpg" alt="publicity" class="ad-image">
+          </aside>
+        </div>
+      </section>
+  
+      <section class="section">
+        <h2 class="h2">Mi Formulario</h2>
+  
+        <form action="/" id="coolForm" onsubmit="submitForm(event)">
+          <fieldset class="fieldset">
+            <legend class="legend">Datos personales</legend>
+            <div class="form-wrapper">
+              <div class="form-field">
+                <label for="name" class="form-label">Nombre *</label>
+                <input type="text" name="name" id="name" required class="form-input">
+              </div>
+              <div class="form-field">
+                <label for="lastName" class="form-label">Apellidos *</label>
+                <input type="text" name="lastName" id="lastName" required class="form-input">
+              </div>
+              <div class="form-field">
+                <label for="phoneNumber" class="form-label">Teléfono *</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" required class="form-input">
+              </div>
+              <div class="form-field form-radio">
+                <label> <input type="radio" name="documentType" id="dni"> DNI</label>
+                <label> <input type="radio" name="documentType" id="nie"> NIE</label>
+              </div>
+              <div class="form-field">
+                <label for="documentNumber" class="form-label">Nº Documento *</label>
+                <input type="text" name="documentNumber" id="documentNumber" required class="form-input">
+              </div>
+            </div>
+           
+          </fieldset>
+          
+          <fieldset class="fieldset">
+            <legend class="legend">Otros datos</legend>
+            <div class="form-wrapper">
+              <div class="form-field">
+                <label for="siblingsNumber" class="form-label">Número de hermanos/as</label>
+                <input type="number" name="siblingsNumber" id="siblingsNumber" class="form-input">
+              </div>
+
+              <div class="form-field">
+                <p>Deportes favoritos:</p>
+        
+                <ol class="checkbox-list">
+                  <li><label>Fútbol <input type=checkbox id="cbox1" value="Fútbol"></label></li>
+                  <li><label>Baloncesto <input type=checkbox id="cbox2" value="Baloncesto"></label></li>
+                  <li><label>Rugby <input type=checkbox id="cbox3" value="Rugby"></label></li>
+                  <li><label>Pádel <input type=checkbox id="cbox4" value="Pádel"></label></li>
+                  <li><label>Pelota vasca <input type=checkbox id="cbox5" value="Pelota vasca"></label></li>
+                </ol>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-disclaimer">
+            (*) Campos obligatorios
+          </div>
+  
+          <button class="btn" type="reset">Reset Form</button>
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <section class="section">
+        <table class="table" id="coolTable">
+          <caption class="h2 caption">Título de nuestra Tabla Molona</caption>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellidos</th>
+              <th>Teléfono</th>
+              <th>DNI/NIE</th>
+              <th>Deportes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Carlos</td>
+              <td>Casalengua</td>
+              <td>987654321</td>
+              <td>12345678-A</td>
+              <td>Fútbol, Pádel</td>
+            </tr>
+            <tr>
+              <td>Jesús</td>
+              <td>Cárdenas</td>
+              <td>987654329</td>
+              <td>12345678-Z</td>
+              <td>Rugby, Pelota vasca</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+     
+    </div>
+  </main>
+
+</body>
+
+</html>
