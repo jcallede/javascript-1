@@ -253,3 +253,36 @@
   }
    
   /*--------------------- END TABLE -------------------*/
+
+
+
+  /* -------------------- ANIMATIONS --------------- */
+
+  @keyframes fadeInfadeOut {
+    0%   { background-color: white; }
+    50%  { background-color: var(--second-theme); }
+    100% { background-color: white; }
+  }
+  @-o-keyframes fadeInfadeOut{
+    0%   { background-color: white; }
+    50%  { background-color: var(--second-theme); }
+    100% { background-color: white; }
+  }
+  @-moz-keyframes fadeInfadeOut{
+    0%   { background-color: white; }
+    50%  { background-color: var(--second-theme); }
+    100% { background-color: white; }
+  }
+  @-webkit-keyframes fadeInfadeOut{
+    0%   { background-color: white; }
+    50%  { background-color: var(--second-theme); }
+    100% { background-color: white; }
+  }
+  .new-row {
+     -webkit-animation: fadeInfadeOut 300ms 6;
+     -moz-animation: fadeInfadeOut 300ms 6;
+     -o-animation: fadeInfadeOut 300ms 6;
+      animation: fadeInfadeOut 300ms 6;
+  }
+
+  /* -------------------- END ANIMATIONS --------------- */

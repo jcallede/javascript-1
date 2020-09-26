@@ -55,6 +55,9 @@ const addRow = (values) => {
         cell.innerHTML = arrValues[i];
     }
 
+    // Add highlight animation to the new row:
+    row.classList.add('new-row');
+
     // Lastly, scrolling down to the table to see the results :)
     coolTable.scrollIntoView({ behavior: 'smooth' });
 }
