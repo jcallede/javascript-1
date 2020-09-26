@@ -22,6 +22,7 @@
       --second-theme: #d9d9d9;  /*GRIS*/
       --border-color: #777;    /*GRIS OSCURO*/
       --tertiary-theme: #717e11;    /*VERDE OSCURO*/
+      --cuaternary-theme: #9aae044d; /* VERDE OPACIDAD 0.3*/
     /*--------------------- END COLORS ---------------------*/
     /*--------------------- FONTS ---------------------*/
       --font-primary: 'verdana';
@@ -260,29 +261,29 @@
 
   @keyframes fadeInfadeOut {
     0%   { background-color: white; }
-    50%  { background-color: var(--second-theme); }
+    50%  { background-color: var(--cuaternary-theme); }
     100% { background-color: white; }
   }
   @-o-keyframes fadeInfadeOut{
     0%   { background-color: white; }
-    50%  { background-color: var(--second-theme); }
+    50%  { background-color: var(--cuaternary-theme); }
     100% { background-color: white; }
   }
   @-moz-keyframes fadeInfadeOut{
     0%   { background-color: white; }
-    50%  { background-color: var(--second-theme); }
+    50%  { background-color: var(--cuaternary-theme); }
     100% { background-color: white; }
   }
   @-webkit-keyframes fadeInfadeOut{
     0%   { background-color: white; }
-    50%  { background-color: var(--second-theme); }
+    50%  { background-color: var(--cuaternary-theme); }
     100% { background-color: white; }
   }
   .new-row {
-     -webkit-animation: fadeInfadeOut 300ms 6;
-     -moz-animation: fadeInfadeOut 300ms 6;
-     -o-animation: fadeInfadeOut 300ms 6;
-      animation: fadeInfadeOut 300ms 6;
+     -webkit-animation: fadeInfadeOut 400ms 4;
+     -moz-animation: fadeInfadeOut 400ms 4;
+     -o-animation: fadeInfadeOut 400ms 4;
+      animation: fadeInfadeOut 400ms 4;
   }
 
   /* -------------------- END ANIMATIONS --------------- */
