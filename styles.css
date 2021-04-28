@@ -6,7 +6,7 @@
   }
 
   ::-moz-selection { /* Code for Firefox */
-    color: white;
+    color: beige;
     background: var(--primary-theme);
   }
   
